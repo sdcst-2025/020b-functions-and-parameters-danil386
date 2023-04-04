@@ -8,3 +8,12 @@ into another number.
 Example: The factors of 10 are 1, 2, 5, 10
 (2 points)
 """
+
+def factors(x):
+
+    return 
+
+if __name__ == "__main__":
+    n = factors(10)
+    assert n.sort() == [1,2,5,10]
+    
