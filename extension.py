@@ -42,6 +42,7 @@ def numSolutions(a,b,c):
     # Description:
     #
     # return 0, 1 or 2
+    return 
 
 def solutions(a,b,c):
     #inputs:
@@ -51,10 +52,12 @@ def solutions(a,b,c):
     # Desription:
     #
     # return tuple of float solution1 and float solution2
+    return
 
 def title():
     # inputs none
     # return str of All the title and instructions on one line
+    return
 
 
 def main():

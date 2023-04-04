@@ -16,10 +16,9 @@ The commands will not be executed unless the function is
  notice the use of comments to indicate what the input parameters are
  as well as what the output is
 
- NOTE: You can think of each function as being its down distinct unit.  Any
- variables that you create inside a function only exist inside that function,
- and any variables that were created outside the function do not exist inside
- the function
+ NOTE: You can think of each function as being its down distinct unit.  Any variables that you create inside a function only exist inside that function, and any variables that were created outside the function do not exist inside the function
+
+ Notice that the function does not contain any output or print statements.  The goal of using a function is to create reusable code that can be placed in many different programs.  We can put print statements in to test how the function is working, but it is a good idea to remove them/comment them out so that they don't intefere with the program's output later on.
 """
 
 def double(number):
@@ -32,6 +31,7 @@ def double(number):
     """
 
     answer = number * 2
+    #print(answer)
     return answer
 
 
