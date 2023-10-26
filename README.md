@@ -1,5 +1,5 @@
 ## SDSS Computing Studies Python Assignment
-### Assignment #006 Functions (Total Marks 12)
+### Assignment #020 Functions (Total Marks 12)
 
 Objectives:
 * Explore Modular Code with Functions
@@ -7,10 +7,7 @@ Objectives:
 * Identify and use Return Values
 * Comments are an important part of creating functions
 
-We have looked at quite a lot of commands and structures this year.
-In addition to all of the math and logical operators as well as
-the code structures that control program flow, we have also looked
-at commands that do a specific task.
+We have looked at quite a lot of commands and structures this year.  In addition to all of the math and logical operators as well as the code structures that control program flow, we have also looked at commands that do a specific task.
 
 Consider the following:
 
@@ -18,33 +15,57 @@ pow(x,y) : which finds out the exponent of x to the power of y
 math.floor(x) : which takes the float value of x and rounds it down to an int
 int(x) : which takes a float value of x and converts it to an integer
 
-These are examples of functions.  They are mini programs that can be created
-to do a specific tasks.  A function has a number of things in common:
+These are examples of functions.  They are mini programs that can be created to do a specific tasks.  Defining function has a number of things in common:
 
-There is a function name, that is used when you want to execute or "call"
-the function.
-Parameters are the things that are located inside the brackets.  
-These are important inputs that are needed to run the function or
-mini program.  The parameters are variables that can be used within
-the function
+* the keyword **def** is used to indicate that a function is being defined.
+* There is a function name, that is used when you want to execute or "call" the function.
+* Parameters are the things that are located inside the brackets.   These are important inputs that are needed to run the function or mini program.  The parameters are variables that can be used within the function
+
+```
+example:
+def area_rectangle(length,width):
+
+```
+
+* A function usually has a command that returns control to the function call, along with any results that the function is supposed to generate
 
 Return values:
-The purpose of a function is generate a specific value, or tuple or
-list that is sent back by the function and can be used in an 
-expression or assigned to a value.
+The purpose of a function is generate a specific value, or tuple or list that is sent back by the function and can be used in an expression or assigned to a value.
+
+```
+example:
+def area_rectangle(length,width):
+    try:
+        area = length * width
+        return area
+    except:
+        return "could not calculate area"
+```
 
 Comments:
-Every function should include a comment that describes what the function
-does.
+Every function should include a comment that describes what the function does.
 
+```
+example:
+def area_rectangle(length,width):
+# determine the area of a rectangle
+# parameters:
+#   length: float value
+#   width : float value
+# return:
+#   float value : area if it can be calculated
+#   str : "could not calculate area" if an exception occurs
+
+    try:
+        area = length * width
+        return area
+    except:
+        return "could not calculate area"
+```
 Open up example1.py to see how a basic function can be created.
 
 ### 3 Tasks, 4 Problems
-Note: The autograder will be doing tests to compare
-the return values of your program, and no output is actually graded
-You should be using output to check to see if your program works.
-The expected values can be found in the "assignment_test.py" file
-as "assertions"
+The expected values can be found in the "assignment_test.py" file as "assertions"
 
 ##### Task 1
 Create a function called sum() that takes 2 inputs
