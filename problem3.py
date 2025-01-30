@@ -10,7 +10,11 @@ Example: The factors of 10 are 1, 2, 5, 10
 """
 
 def factors(x):
+    y = 1
     l = []
+    for y in range (1,x+1):
+        if x%y == 0:
+            l.append(y)
     return l
 
 if __name__ == "__main__":

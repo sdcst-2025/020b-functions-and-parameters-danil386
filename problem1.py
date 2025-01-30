@@ -10,8 +10,14 @@ assert hypotenuse(3,4,True) == 5
 (2 points)
 """
 
-def hypotenuse():
-    return
+def hypotenuse(a, b, boolean):
+    input = [a, b]
+    input.sort()
+    if boolean == True:
+        x = ((input[0]**2)+(input[1]**2))**0.5
+    elif boolean == False:
+        x = ((input[1]**2)-(input[0]**2))**0.5
+    return (x)
 
 if __name__ == "__main__":
     assert hypotenuse(3,4,True) == 5
